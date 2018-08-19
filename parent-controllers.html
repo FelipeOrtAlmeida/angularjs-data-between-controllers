@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html data-ng-app="myApp">
+    <head>
+        <script src="js/angular.min.js"></script>
+        <script src="js/parent-controllers.js"></script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>ParentController</legend>
+            <div data-ng-controller="ParentController">
+                <label>Name:</label>
+                <input type="text" data-ng-model="name">
+                <h2>ParentController: {{name}}</h2>
+                <fieldset>
+                    <legend>ChildController</legend>
+                    <div data-ng-controller="ChildController">
+                        <h2>ChildController: {{name}}</h2>
+                    </div>
+                </fieldset>
+            </div>
+        </fieldset>
+    </body>
+</html>

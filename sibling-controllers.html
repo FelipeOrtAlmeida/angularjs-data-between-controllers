@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html data-ng-app="myApp">
+    <head>
+        <script src="js/angular.min.js"></script>
+        <script src="js/sibling-controllers.js"></script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>PersonController</legend>
+            <div data-ng-controller="PersonController">
+                <label>Name:</label>
+                <input type="text" data-ng-model="name">
+                <h2>PersonController: {{name}}</h2>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>GreetingController</legend>
+            <div data-ng-controller="GreetingController">
+                <h2>GreetingController: {{name}}</h2>
+            </div>
+        </fieldset>
+    </body>
+</html>
